@@ -1,11 +1,27 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <title>اقباد الموريتاني</title>
+
+    <!-- ربط ملف CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<header>اقباد الموريتاني</header>
+
 <ul id="surahList"></ul>
 
-<script>
-const list = document.getElementById("surahList");
-surahs.forEach((name, i) => {
-  const li = document.createElement("li");
-  li.textContent = `${i+1}. ${name}`;
-  li.onclick = () => playSurah(i);
-  list.appendChild(li);
-});
-</script>
+<div class="player">
+    <div class="surah-name" id="surahName">اختر سورة</div>
+    <div class="controls">
+        <button onclick="prevSurah()">⏮</button>
+        <button onclick="togglePlay()">▶</button>
+        <button onclick="nextSurah()">⏭</button>
+    </div>
+</div>
+
+<script src="assets/js/app.js"></script>
+</body>
+</html>
