@@ -3,25 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <title>اقباد الموريتاني</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- ربط ملف CSS -->
+    <!-- ملف التنسيق -->
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
 
-<header>اقباد الموريتاني</header>
+    <!-- العنوان -->
+    <header>
+        اقباد الموريتاني
+    </header>
 
-<ul id="surahList"></ul>
+    <!-- قائمة السور -->
+    <ul id="surahList"></ul>
 
-<div class="player">
-    <div class="surah-name" id="surahName">اختر سورة</div>
-    <div class="controls">
-        <button onclick="prevSurah()">⏮</button>
-        <button onclick="togglePlay()">▶</button>
-        <button onclick="nextSurah()">⏭</button>
+    <!-- مشغل الصوت -->
+    <div class="player">
+        <div class="surah-name" id="surahName">
+            اختر سورة
+        </div>
+
+        <div class="controls">
+            <button onclick="prevSurah()">⏮</button>
+            <button onclick="togglePlay()">▶</button>
+            <button onclick="nextSurah()">⏭</button>
+        </div>
     </div>
-</div>
 
-<script src="assets/js/app.js"></script>
+    <!-- ملف الجافاسكربت -->
+    <script src="assets/js/app.js"></script>
 </body>
 </html>
