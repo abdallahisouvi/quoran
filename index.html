@@ -1,0 +1,11 @@
+<ul id="surahList"></ul>
+
+<script>
+const list = document.getElementById("surahList");
+surahs.forEach((name, i) => {
+  const li = document.createElement("li");
+  li.textContent = `${i+1}. ${name}`;
+  li.onclick = () => playSurah(i);
+  list.appendChild(li);
+});
+</script>
