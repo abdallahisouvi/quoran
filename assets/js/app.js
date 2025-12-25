@@ -60,3 +60,9 @@ function prevSurah() {
   currentIndex = (currentIndex - 1 + surahs.length) % surahs.length;
   playSurah(currentIndex);
 }
+audio.addEventListener("ended", () => {
+  if (currentIndex < surahs.length - 1) {
+    currentIndex++;
+    playSurah(currentIndex);
+  }
+});
